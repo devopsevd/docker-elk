@@ -12,8 +12,8 @@ services:
      - "./m2deps:/var/jenkins_home/.m2/repository/"
      - "./downloads:/var/jenkins_home/downloads"
     networks:
-    - prodnetwork
+    - elk
     
 networks:
- prodnetwork:
+ elk:
    driver: bridge
